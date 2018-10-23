@@ -1,0 +1,32 @@
+.headline {
+    background-color: $headline-bg;
+    color: $headline-color;
+    &__container {
+        min-height: 100vh;
+        padding-top: 20vh;
+        padding-bottom: 85px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    &__title {
+        margin: 0;
+    }
+    &__text {
+        max-width: 500px;
+        margin-bottom: 4vh;
+    }
+    &__btn {
+        min-width: 255px;
+        height: 54px;
+        border-color: $headline-color;
+        font-size: 22px;
+        line-height: 50px;
+        color: inherit;
+    }
+    &__anchor {
+        position: absolute;
+        bottom: 55px;
+    }
+}

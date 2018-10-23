@@ -1,0 +1,13 @@
+.main {
+    &__inner {
+        min-height: 100vh;
+        padding: 12vh 0;
+    }
+    &__title {
+        margin: 0;
+    }
+    &__text {
+        margin: 12px 0 10vh;
+        color: $main-color--light;
+    }
+}

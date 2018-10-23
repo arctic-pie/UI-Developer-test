@@ -1,0 +1,27 @@
+.socials {
+    @include no-list;
+    display: inline-flex;
+    &__item {
+        margin-left: 15px;
+    }
+    &__link {
+        display: block;
+        height: 21px;
+        width: 21px;
+        background-repeat: no-repeat;
+        background-position: center;
+        font-size: 0;
+        &--fb {
+            background-image: url("../../img/facebook-ico.png");
+        }
+        &--tw {
+            background-image: url("../../img/twitter-ico.png");
+        }
+        &--goo {
+            background-image: url("../../img/google.png");
+        }
+        &--pin {
+            background-image: url("../../img/pinterest-ico.png");
+        }
+    }
+}

@@ -1,0 +1,21 @@
+.textfield {
+    &__label {
+        display: none;
+    }
+    &__input {
+        display: block;
+        width: 100%;
+        margin: 0 auto;
+        padding: 15px;
+        border: 2px solid $main-color;
+        font-size: 16px;
+        line-height: 20px;
+        &::placeholder {
+            color: $main-color--light;
+        }
+        &--area {
+            height: 205px;
+            resize: none;
+        }
+    }
+}

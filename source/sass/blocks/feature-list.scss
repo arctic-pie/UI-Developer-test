@@ -1,0 +1,40 @@
+.feature-list {
+    @include no-list;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    &__item {
+        position: relative;
+        min-width: 33%;
+        width: 300px;
+        padding-left: 80px;
+        padding-right: 20px;
+        &:not(:last-child) {
+            margin-bottom: 10vh;
+        }
+        &::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            display: block;
+            width: 80px;
+            height: 80px;
+            background-image: url("../../img/icon-font-1.png");
+            background-repeat: no-repeat;
+            background-position: top center;
+        }
+    }
+    &__title {
+        margin: 0 0 10px;
+
+    }
+    &__description {
+        margin: 0;
+        color: $main-color--light;
+        font-size: 16px;
+        line-height: 20px;
+        text-align: left;
+    }
+}

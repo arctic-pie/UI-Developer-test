@@ -1,0 +1,19 @@
+.button {
+    background-color: $main-bg;
+    border: 2px solid $main-color;
+    font-family: $font-family-bold;
+    font-weight: normal;
+    color: $main-color;
+    font-size: 16px;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+    &--black {
+        color: $main-bg;
+        background-color: $main-color;
+    }
+    &--transparent {
+        background-color: transparent;
+    }
+}
+

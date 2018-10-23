@@ -1,0 +1,23 @@
+@mixin no-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+@mixin no-link {
+    text-decoration: none;
+    color: inherit;
+}
+
+@mixin transition($values...) {
+    @if $values == true {
+        @each $var in $values {
+            transition: #{$var};
+        }
+    } @else {
+        transition: all 0.2s linear;
+    }
+    @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+        transition: none;
+    }
+}
